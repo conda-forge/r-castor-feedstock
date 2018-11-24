@@ -16,7 +16,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1000
   skip: true  # [win32]
 
   rpaths:
@@ -57,8 +57,7 @@ about:
     two trees, and reading/writing trees to a file. Citation - Louca, Stilianos and Doebeli,
     Michael (2017) <doi:10.1093/bioinformatics/btx701>.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
