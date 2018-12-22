@@ -1,13 +1,15 @@
 About r-castor
 ==============
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 Home: https://CRAN.R-project.org/package=castor
 
 Package license: GPL (>= 2)
 
 Feedstock license: BSD 3-Clause
 
-Summary: Efficient tree manipulations for large phylogenies, including pruning, rerooting, calculation of most-recent common ancestors, calculating distances from the tree root and calculating pairwise distances. Calculation of phylogenetic signal and mean trait depth (trait conservatism), ancestral state reconstruction and hidden character prediction of discrete characters. Simulating and fitting models of trait evolution, and generating random trees using birth-death models. Dating trees, comparing two trees, and reading/writing trees to a file. Citation - Louca, Stilianos and Doebeli, Michael (2017) <doi:10.1093/bioinformatics/btx701>.
+Summary: Efficient tree manipulations for large phylogenies, including pruning, rerooting, calculation of most-recent common ancestors, calculating distances from the tree root and calculating pairwise distances. Calculation of phylogenetic signal and mean trait depth (trait conservatism), ancestral state reconstruction and hidden character prediction of discrete characters. Simulating and fitting models of trait evolution, and generating random trees using birth-death models. Dating trees, comparing two trees, and reading/writing trees to a file. Citation: Louca, Stilianos and Doebeli, Michael (2017) <doi:10.1093/bioinformatics/btx701>.
 
 
 
@@ -104,3 +106,15 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@bgruening](https://github.com/bgruening/)
+* [@cbrueffer](https://github.com/cbrueffer/)
+* [@daler](https://github.com/daler/)
+* [@dbast](https://github.com/dbast/)
+* [@gavinmdouglas](https://github.com/gavinmdouglas/)
+* [@jdblischak](https://github.com/jdblischak/)
+* [@johanneskoester](https://github.com/johanneskoester/)
+
