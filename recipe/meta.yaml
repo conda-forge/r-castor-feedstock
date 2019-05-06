@@ -1,4 +1,4 @@
-{% set version = '1.3.5' %}
+{% set version = "1.3.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/castor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/castor/castor_{{ version }}.tar.gz
-  sha256: 8bc89f79c7a4dfb5a6201679a904bd684221082e4d801ddb3b7f528fe3dde05b
+  sha256: 388149ea13ee56e991fd70bd374041ad4fec810e989f0e4cea832e5981506aad
 
 build:
   merge_build_host: True  # [win]
