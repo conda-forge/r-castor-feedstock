@@ -1,4 +1,4 @@
-{% set version = "1.3.6" %}
+{% set version = '1.4.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/castor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/castor/castor_{{ version }}.tar.gz
-  sha256: 388149ea13ee56e991fd70bd374041ad4fec810e989f0e4cea832e5981506aad
+  sha256: 6f866b299d6d40acdd6d2c4de9dff7d792675e85eb259fac83fbb6ce54738b20
 
 build:
   merge_build_host: True  # [win]
@@ -21,9 +21,10 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}        # [not win]
-    - {{ compiler('cxx') }}      # [not win]
-    - {{native}}toolchain        # [win]
+    - {{ compiler('c') }}              # [not win]
+    - {{ compiler('m2w64_c') }}        # [win]
+    - {{ compiler('cxx') }}            # [not win]
+    - {{ compiler('m2w64_cxx') }}      # [win]
     - {{posix}}filesystem        # [win]
     - {{posix}}make
     - {{posix}}sed               # [win]
@@ -68,8 +69,8 @@ extra:
 # Package: castor
 # Type: Package
 # Title: Efficient Phylogenetics on Large Trees
-# Version: 1.3.5
-# Date: 2019-02-14
+# Version: 1.4.1
+# Date: 2019-06-15
 # Author: Stilianos Louca
 # Maintainer: Stilianos Louca <louca@zoology.ubc.ca>
 # Description: Efficient phylogenetic analyses on massive phylogenies comprising up to millions of tips. Functions include pruning, rerooting, calculation of most-recent common ancestors, calculating distances from the tree root and calculating pairwise distances. Calculation of phylogenetic signal and mean trait depth (trait conservatism), ancestral state reconstruction and hidden character prediction of discrete characters, simulating and fitting models of trait evolution, fitting and simulating diversification models, dating trees, comparing trees, and reading/writing trees in Newick format. Citation: Louca, Stilianos and Doebeli, Michael (2017) <doi:10.1093/bioinformatics/btx701>.
@@ -78,8 +79,7 @@ extra:
 # Imports: parallel, naturalsort, stats, nloptr
 # LinkingTo: Rcpp
 # RoxygenNote: 6.0.1
-# Suggests: testthat
 # NeedsCompilation: yes
-# Packaged: 2019-02-15 03:45:42 UTC; stilianoslouca
+# Packaged: 2019-06-15 19:30:18 UTC; StilianosLouca
 # Repository: CRAN
-# Date/Publication: 2019-02-15 14:30:15 UTC
+# Date/Publication: 2019-06-15 22:30:03 UTC
