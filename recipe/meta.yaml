@@ -1,4 +1,4 @@
-{% set version = '1.4.1' %}
+{% set version = '1.4.2' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/castor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/castor/castor_{{ version }}.tar.gz
-  sha256: 6f866b299d6d40acdd6d2c4de9dff7d792675e85eb259fac83fbb6ce54738b20
+  sha256: 6cf8081c8c092bbfd260795dc2088da432596c6e60338321997618ff2c00e00b
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,7 +49,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=castor
-  license: GPL (>= 2)
+  license: GPL-2
   summary: 'Efficient phylogenetic analyses on massive phylogenies comprising up to millions
     of tips. Functions include pruning, rerooting, calculation of most-recent common
     ancestors, calculating distances from the tree root and calculating pairwise distances.
@@ -58,8 +58,9 @@ about:
     and fitting models of trait evolution, fitting and simulating diversification models,
     dating trees, comparing trees, and reading/writing trees in Newick format. Citation:
     Louca, Stilianos and Doebeli, Michael (2017) <doi:10.1093/bioinformatics/btx701>.'
-  license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_family: GPL2
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
@@ -69,8 +70,8 @@ extra:
 # Package: castor
 # Type: Package
 # Title: Efficient Phylogenetics on Large Trees
-# Version: 1.4.1
-# Date: 2019-06-15
+# Version: 1.4.2
+# Date: 2019-07-29
 # Author: Stilianos Louca
 # Maintainer: Stilianos Louca <louca@zoology.ubc.ca>
 # Description: Efficient phylogenetic analyses on massive phylogenies comprising up to millions of tips. Functions include pruning, rerooting, calculation of most-recent common ancestors, calculating distances from the tree root and calculating pairwise distances. Calculation of phylogenetic signal and mean trait depth (trait conservatism), ancestral state reconstruction and hidden character prediction of discrete characters, simulating and fitting models of trait evolution, fitting and simulating diversification models, dating trees, comparing trees, and reading/writing trees in Newick format. Citation: Louca, Stilianos and Doebeli, Michael (2017) <doi:10.1093/bioinformatics/btx701>.
@@ -80,6 +81,6 @@ extra:
 # LinkingTo: Rcpp
 # RoxygenNote: 6.0.1
 # NeedsCompilation: yes
-# Packaged: 2019-06-15 19:30:18 UTC; StilianosLouca
+# Packaged: 2019-07-29 19:00:39 UTC; StilianosLouca
 # Repository: CRAN
-# Date/Publication: 2019-06-15 22:30:03 UTC
+# Date/Publication: 2019-07-29 22:40:02 UTC
