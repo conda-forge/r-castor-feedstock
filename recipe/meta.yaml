@@ -49,7 +49,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=castor
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: 'Efficient phylogenetic analyses on massive phylogenies comprising up to millions of tips. Functions include pruning, rerooting, calculation of most-recent
     common ancestors, calculating distances from the tree root and calculating pairwise distances. Calculation of phylogenetic signal and mean trait depth (trait
     conservatism), ancestral state reconstruction and hidden character prediction of discrete characters, simulating and fitting models of trait evolution, fitting
