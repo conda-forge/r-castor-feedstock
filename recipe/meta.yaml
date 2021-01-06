@@ -32,12 +32,16 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-matrix
+    - r-rspectra
     - r-rcpp >=0.12.10
     - r-naturalsort
     - r-nloptr
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
+    - r-matrix
+    - r-rspectra
     - r-rcpp >=0.12.10
     - r-naturalsort
     - r-nloptr
