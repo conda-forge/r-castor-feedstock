@@ -30,13 +30,13 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-matrix
     - r-rspectra
     - r-rcpp >=0.12.10
     - r-naturalsort
-    - r-nloptr
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
@@ -44,7 +44,6 @@ requirements:
     - r-rspectra
     - r-rcpp >=0.12.10
     - r-naturalsort
-    - r-nloptr
 
 test:
   commands:
