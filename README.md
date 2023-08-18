@@ -3,6 +3,7 @@ About r-castor-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-castor-feedstock/blob/main/LICENSE.txt)
 
+
 About r-castor
 --------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=castor
 Package license: GPL-2.0-or-later
 
 Summary: Efficient phylogenetic analyses on massive phylogenies comprising up to millions of tips. Functions include pruning, rerooting, calculation of most-recent common ancestors, calculating distances from the tree root and calculating pairwise distances. Calculation of phylogenetic signal and mean trait depth (trait conservatism), ancestral state reconstruction and hidden character prediction of discrete characters, simulating and fitting models of trait evolution, fitting and simulating diversification models, dating trees, comparing trees, and reading/writing trees in Newick format. Citation: Louca, Stilianos and Doebeli, Michael (2017) <doi:10.1093/bioinformatics/btx701>.
+
 About r-castor
 --------------
 
