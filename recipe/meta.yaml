@@ -1,4 +1,4 @@
-{% set version = "1.7.11" %}
+{% set version = "1.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/castor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/castor/castor_{{ version }}.tar.gz
-  sha256: c3fa63969ffbebc92878b857052110d3e22e9bbd06b28641604c32a5177fb2b3
+  sha256: 6c4497d1102e4d061a8e9987830386b0b076efbed6f031e4f5df350b0d105c31
 
 build:
   merge_build_host: true  # [win]
@@ -36,6 +36,7 @@ requirements:
     - r-matrix
     - r-rspectra
     - r-rcpp >=0.12.10
+    - r-jsonlite
     - r-naturalsort
   run:
     - r-base
@@ -43,6 +44,7 @@ requirements:
     - r-matrix
     - r-rspectra
     - r-rcpp >=0.12.10
+    - r-jsonlite
     - r-naturalsort
 
 test:
