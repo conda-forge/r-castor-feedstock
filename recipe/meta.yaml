@@ -36,6 +36,7 @@ requirements:
     - r-matrix
     - r-rspectra
     - r-rcpp >=0.12.10
+    - r-jsonlite
     - r-naturalsort
   run:
     - r-base
@@ -43,6 +44,7 @@ requirements:
     - r-matrix
     - r-rspectra
     - r-rcpp >=0.12.10
+    - r-jsonlite
     - r-naturalsort
 
 test:
