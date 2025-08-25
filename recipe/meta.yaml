@@ -1,4 +1,4 @@
-{% set version = "1.8.3" %}
+{% set version = "1.8.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/castor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/castor/castor_{{ version }}.tar.gz
-  sha256: 82bfb5671ffc29e59302826bea29da31d46ebe14962d81515c3480bd3f9206c3
+  sha256: ae75d326193b6f4e446347701e10845328d4282a905581bbb9eba9590c60f2f1
 
 build:
   number: 0
